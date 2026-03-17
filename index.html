@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mira | systems programmer</title>
+    <style>
+        /* Premium Minimalist Theme (Dark Mode) */
+        :root {
+            --bg: #0a0a0a;
+            --text: #ededed;
+            --muted: #888888;
+            --border: #222222;
+            --hover-bg: #141414;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 650px;
+            width: 85%;
+            padding: 120px 0;
+        }
+
+        /* Header */
+        header {
+            margin-bottom: 100px;
+        }
+
+        h1 {
+            font-size: 36px;
+            font-weight: 600;
+            letter-spacing: -1px;
+            margin: 0 0 8px 0;
+        }
+
+        .tagline {
+            font-size: 16px;
+            color: var(--muted);
+            font-weight: 400;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 80px;
+        }
+
+        h2 {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--muted);
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+
+        /* Video Project Rows */
+        .project-list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 24px 0;
+            border-bottom: 1px solid var(--border);
+            text-decoration: none;
+            color: var(--text);
+            transition: background-color 0.3s ease, padding-left 0.3s ease;
+            margin: 0 -15px; /* Offset for hover padding */
+            padding: 24px 15px;
+            border-radius: 8px;
+        }
+
+        .project-row:hover {
+            background-color: var(--hover-bg);
+        }
+
+        .project-info h3 {
+            margin: 0 0 6px 0;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .project-info p {
+            margin: 0;
+            font-size: 14px;
+            color: var(--muted);
+        }
+
+        /* The Premium Arrow Icon */
+        .arrow-icon {
+            width: 20px;
+            height: 20px;
+            fill: none;
+            stroke: var(--muted);
+            stroke-width: 1.5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            transition: transform 0.3s ease, stroke 0.3s ease;
+        }
+
+        .project-row:hover .arrow-icon {
+            transform: translateX(4px) translateY(-4px);
+            stroke: var(--text);
+        }
+
+        /* Contact Section */
+        .contact-links {
+            display: flex;
+            gap: 24px;
+        }
+
+        .contact-links a {
+            color: var(--text);
+            text-decoration: none;
+            font-size: 14px;
+            padding-bottom: 2px;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.2s ease, color 0.2s ease;
+        }
+
+        .contact-links a:hover {
+            border-bottom: 1px solid var(--text);
+        }
+
+        footer {
+            margin-top: 120px;
+            font-size: 12px;
+            color: var(--muted);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>mira.</h1>
+        <div class="tagline">Roblox Systems Programmer & Backend Developer</div>
+    </header>
+
+    <section id="work">
+        <h2>Video Demonstrations</h2>
+        
+        <div class="project-list">
+            <!-- Project 1 (Link to YouTube) -->
+            <a href="YOUR_YOUTUBE_LINK_HERE" target="_blank" class="project-row">
+                <div class="project-info">
+                    <h3>Modular Combat System</h3>
+                    <p>Raycast hit detection and server-side validation.</p>
+                </div>
+                <svg class="arrow-icon" viewBox="0 0 24 24">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+            </a>
+
+            <!-- Project 2 (Link to YouTube) -->
+            <a href="YOUR_YOUTUBE_LINK_HERE" target="_blank" class="project-row">
+                <div class="project-info">
+                    <h3>Data Persistence Framework</h3>
+                    <p>Session-locking and auto-saving via ProfileService.</p>
+                </div>
+                <svg class="arrow-icon" viewBox="0 0 24 24">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+            </a>
+
+            <!-- Project 3 (Link to YouTube) -->
+            <a href="YOUR_YOUTUBE_LINK_HERE" target="_blank" class="project-row">
+                <div class="project-info">
+                    <h3>Interactive Environment</h3>
+                    <p>OOP-based interaction system using ProximityPrompts.</p>
+                </div>
+                <svg class="arrow-icon" viewBox="0 0 24 24">
+                    <line x1="7" y1="17" x2="17" y2="7"></line>
+                    <polyline points="7 7 17 7 17 17"></polyline>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Connect</h2>
+        <div class="contact-links">
+            <a href="#">Discord</a>
+            <a href="#">HiddenDevs</a>
+            <a href="#">Roblox</a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 mira. All rights reserved.
+    </footer>
+</div>
+
+</body>
+</html>
